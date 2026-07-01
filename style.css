@@ -1,6 +1,94 @@
+:root{ 
+    --light-col: #d4f1ff;
+    --dark-col: #290af3;
+}
+
+html {
+    height: 100%;
+}
+
 body {
+    min-height: 100%;
     text-align: center;
-    background-color: lightblue;
-    font-family: 'Arial';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color : darkblue;
+    background-image: linear-gradient(45deg, lightblue, rgb(92, 151, 203), rgb(42, 49, 125));
+    background-attachment: fixed;
+    
+}
+
+
+header {
+    text-align: right;
+    background-color: var(--light-col);
+    vertical-align: top;
+    color: var(--dark-col);
+
+}
+
+footer {
+    text-align: center;
+    border: solid 3px rgb(0, 198, 255);
+    margin: 80px;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "a c"
+    "b d";
+    gap: 10px;
+    margin: 30px;
+    background-color: var(--header-col);
+}
+
+.one {
+    grid-area: a;
+    background-color: beige;
+    color: brown;
+}
+
+.two {
+    grid-area: b;
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+.three {
+    grid-area: c;
+    background-color: rgb(146, 96, 146);
+    color: purple;
+}
+
+.four {
+    grid-area: d;
+    background-color: lightblue;
+    color: darkblue;
+}
+
+.box {
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+ /*At least 1 container - done
+1 use of margins 
+1 use of padding
+1 use of vareiables - done
+At least two uses of the following:
+Grids - done
+Gradients - done
+Animations
+Flexboxes*/
+
+
+.heading {
+    background-color: rgb(106, 184, 240);
 }
