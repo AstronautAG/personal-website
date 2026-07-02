@@ -5,28 +5,51 @@
         <link rel="icon" type="image/x-icon" href="favicon.png">
         <title>My Personal Website</title>
     </head>
-    <body>
-        <header>
+    <body class="body">
+        <header class="body">
             <a id="link" href="https://nasa.gov">NASA</a>
             <a id="link" href="/about.html">About Me</a>
             <a id="link" href="/projects.html">Projects I've made</a>
         </header>
         
-        <div class="heading">
-        <h1>My personal website</h1>
+        <div class="heading" class="body">
+        <h1 class="body">My personal website</h1>
         </div>
 
-        <p>I'm Astronaut_AG and have some coding experience! Excited to show my skills here!</p>
-        <p>P.S. I love space: it's is really cool</p>
+        <h2 id="timeOfDay"></h2>
+        <p class="body">I'm Astronaut_AG and have some coding experience! Excited to show my skills here!</p>
+        <p class="body">P.S. I love space: it's is really cool</p>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu-NQOEfbgUU38b3soDCtBrZ1-kWWklViz1IXvRD5LHQ&s=10">
         <br>
 
-        <div class="grid">
-            <div class="one">My favorite coding languages are HTML/CSS/JS</div>
-            <div class="two">I've been coding since I was 8</div>
-            <div class="three">Coding is my favorite free-time activity</div>
-            <div class="four">I'm making this website for Hack Club!</div>
+        <div class="grid" class="body">
+            <div class="one" class="body">My favorite coding languages are HTML/CSS/JS</div>
+            <div class="two" class="body">I've been coding since I was 8</div>
+            <div class="three" class="body">Coding is my favorite free-time activity</div>
+            <div class="four" class="body">I'm making this website for Hack Club!</div>
         </div>
+
+        <div class = "darkMode" id="darkMode">
+            <p class="body">Check this box for Dark Mode: </p>
+            <input type="checkbox" id="darkModeBtn" onChange="darkMode()">
+        </div>
+
+        
+        <div class="textSize">
+        <p>Change the size of the text!</p>
+        <button onclick="textSize('text', 2)">+</button>
+        <button onclick="textSize('text', -2)">-</button>
+        </div>
+
+        
+        <div id="text">
+        <p>This is some text.</p>
+        </div>
+
+
+        
+
+        <script src="script.js"></script>
 
     </body>
 </html>

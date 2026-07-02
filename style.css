@@ -92,3 +92,33 @@ Flexboxes*/
 .heading {
     background-color: rgb(106, 184, 240);
 }
+
+body.dark .one,
+body.dark .two,
+body.dark .three,
+body.dark .four {
+    background-color: #333;
+    color: white;
+}
+
+body.dark .heading {
+    background-color: #222;
+}
+
+body.dark header {
+    background-color: #111;
+    color: white;
+}
+
+button {
+    border: none;
+    border-radius: 25px;
+    padding: 2px;
+    width: 20px;
+    background:rgb(0, 198, 255);
+    font-size: 25;
+}
+
+button:hover {
+    background:rgb(42, 49, 125);
+}
